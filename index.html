@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#142850">
+  <meta name="description" content="Um ano de nós. Uma eternidade para descobrir.">
+  <title>Nosso Pequeno Infinito ♡</title>
+  <link rel="icon" href="./assets/icons/heart.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#convite">Pular para a história</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#convite" aria-label="Voltar ao início">F<span>♡</span>B</a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="chapter-nav" aria-label="Abrir menu de capítulos"><span></span><span></span></button>
+    <nav class="chapter-nav" id="chapter-nav" aria-label="Navegação por capítulos">
+      <a href="#convite">Convite</a><a href="#universo">Universo</a><a href="#historia">História</a><a href="#mundos">Mundos</a><a href="#musicas">Músicas</a><a href="#jogo">Jogo</a><a href="#cartinhas">Cartinhas</a><a href="#saudade">Saudade</a><a href="#carta">Carta</a><a href="#surpresa">Surpresa</a>
+    </nav>
+    <span class="header-chapter" id="header-chapter">01 / 10</span>
+  </header>
+
+  <main>
+    <section class="chapter invite" id="convite" data-chapter="1" aria-labelledby="invite-title">
+      <div class="invite-sprinkles" aria-hidden="true"><span>✦</span><span>♡</span><span>✳</span><span>♡</span><span>✦</span><span>♡</span></div>
+      <div class="invite-content">
+        <span class="eyebrow">09.10.2025 — 09.10.2026</span>
+        <h1 id="invite-title" data-copy="inviteTitle">Ei, meu amor... 💌</h1>
+        <p class="lead" data-copy="inviteSub">Preparei uma coisinha para você.</p>
+        <button class="envelope envelope-intro" id="intro-envelope" type="button" aria-expanded="false" aria-controls="intro-reveal" aria-label="Abrir o envelope">
+          <span class="envelope-shadow"></span><span class="envelope-back"></span><span class="envelope-paper"><span>para você,<br>com todo o meu amor ♡</span></span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-seal">♡</span>
+        </button>
+        <div class="invite-reveal" id="intro-reveal" aria-live="polite">
+          <p data-copy="inviteReveal1">365 dias atrás, começou uma das partes mais bonitas da minha vida.</p>
+          <p data-copy="inviteReveal2">E hoje eu queria te mostrar uma coisa...</p>
+          <a class="button button-primary" href="#universo" id="discover-button">Descobrir nosso universo <span aria-hidden="true">♡</span></a>
+        </div>
+        <p class="invite-hint" id="invite-hint">Toque no envelope para abrir</p>
+      </div>
+      <span class="chapter-index">CAPÍTULO 01 <i></i> O CONVITE</span>
+    </section>
+
+    <section class="chapter universe" id="universo" data-chapter="2" aria-labelledby="universe-title">
+      <div class="starfield" aria-hidden="true"></div>
+      <div class="universe-inner wrap">
+        <div class="universe-art reveal" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="planet planet-him"><span>✦</span></div><div class="planet planet-her"><span>✿</span></div>
+          <div class="universe-heart">♥</div><span class="orbit-spark s1">✧</span><span class="orbit-spark s2">✦</span><span class="orbit-spark s3">✧</span>
+        </div>
+        <div class="universe-copy reveal">
+          <span class="eyebrow light">CAPÍTULO 02 · QUANDO TUDO COMEÇOU</span>
+          <h2 id="universe-title" data-copy="siteTitle">Nosso Pequeno<br>Infinito <em>♡</em></h2>
+          <p class="universe-tagline" data-copy="mainPhrase">Um ano de nós. Uma eternidade para descobrir.</p>
+          <p class="universe-sub" data-copy="universeSub">Um ano atrás, duas histórias começaram a ser uma só.</p>
+          <div class="date-line"><span>09.10.2025</span><span class="date-heart">♥</span><span>09.10.2026</span></div>
+          <div class="counter-card"><span data-copy="counterLabel">Estamos escrevendo nossa história há...</span><strong id="day-count">365 <small>dias</small></strong><span id="anniversary-message"></span></div>
+          <a class="button button-light" href="#historia">Vem lembrar tudo comigo? <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <button class="easter easter-star" type="button" data-secret="star" aria-label="Revelar segredo da estrela">✦</button>
+    </section>
+
+    <section class="chapter history section-pad" id="historia" data-chapter="3" aria-labelledby="history-title">
+      <div class="wrap">
+        <div class="section-heading reveal"><span class="eyebrow">CAPÍTULO 03 · PÁGINAS DE NÓS</span><h2 id="history-title">Nossa história, <em>do nosso jeito.</em></h2><p>Nenhuma história bonita cabe inteira numa linha do tempo. Mas alguns pedacinhos merecem ficar guardados.</p></div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+      <button class="easter easter-heart" type="button" data-secret="heart" aria-label="Revelar mensagem escondida">♥</button>
+    </section>
+
+    <section class="chapter worlds section-pad" id="mundos" data-chapter="4" aria-labelledby="worlds-title">
+      <div class="wrap">
+        <div class="section-heading reveal"><span class="eyebrow">CAPÍTULO 04 · O ENCONTRO</span><h2 id="worlds-title">Dois mundos. <em>Um lugar só nosso.</em></h2><p data-copy="worldsIntro">Duas cores, duas playlists, mil detalhes diferentes. E uma coincidência bonita: a gente.</p></div>
+        <div class="worlds-stage" id="worlds-stage">
+          <article class="world-card world-him reveal"><div class="world-art"><span class="comic-burst">POW! <small>♡</small></span><svg viewBox="0 0 160 130" class="web-heart" aria-hidden="true"><path d="M80 116C53 92 15 72 25 39c8-24 38-27 55-5 17-22 47-19 55 5 10 33-28 53-55 77Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M80 34v82M26 52l109 27M35 80l95-28M49 24l66 76M112 23 47 100M25 39l55 77 55-77" fill="none" stroke="currentColor" stroke-width="1" opacity=".6"/></svg><span class="world-note">azul e vermelho · jogos · programação</span></div><div class="world-copy"><span class="eyebrow">O UNIVERSO DELE</span><h3>Um pouco de mim</h3><p data-copy="worldHim">Eu tinha meu próprio mundo, minhas músicas, minhas cores e meus sonhos...</p><button class="easter easter-web" type="button" data-secret="web" aria-label="Revelar segredo da teia">✳</button></div></article>
+          <div class="worlds-center"><button class="join-button" id="join-worlds" type="button" aria-pressed="false"><span>♡</span><small>UNIR<br>OS MUNDOS</small></button></div>
+          <article class="world-card world-her reveal"><div class="world-art"><span class="bow-art" aria-hidden="true">୨♡୧</span><span class="cloud-art">☁</span><span class="flower-art">✿</span><span class="world-note">rosa · laços · brilho</span></div><div class="world-copy"><span class="eyebrow">O UNIVERSO DELA</span><h3>Um pouco de você</h3><p data-copy="worldHer">Você chegou com seu mundo, seus detalhes, seu jeito único e tudo aquilo que faz você ser você.</p><button class="easter easter-bow" type="button" data-secret="bow" aria-label="Revelar segredo do laço">୨୧</button></div></article>
+        </div>
+        <div class="worlds-union" id="worlds-union" aria-live="polite"><span>✦</span><p data-copy="worldUnion">E no meio de tantas diferenças, a gente encontrou o nosso lugar favorito: um no outro.</p><a class="button button-primary" href="#musicas">Esse é o nosso mundo ♡</a></div>
+      </div>
+    </section>
+
+    <section class="chapter soundtrack section-pad" id="musicas" data-chapter="5" aria-labelledby="soundtrack-title">
+      <div class="wrap"><div class="section-heading reveal"><span class="eyebrow">CAPÍTULO 05 · APERTE O PLAY NA MEMÓRIA</span><h2 id="soundtrack-title">Se a gente fosse <em>uma playlist...</em></h2><p data-copy="musicIntro">Talvez tivesse músicas para dançar, outras para ficar quietinhos e algumas que ainda vamos descobrir.</p></div><div class="record-grid" id="record-grid"></div></div>
+    </section>
+
+    <section class="chapter quiz section-pad" id="jogo" data-chapter="6" aria-labelledby="quiz-title">
+      <div class="wrap quiz-layout"><div class="quiz-intro reveal"><span class="eyebrow">CAPÍTULO 06 · UMA PAUSA PARA BRINCAR</span><h2 id="quiz-title">Será que você conhece mesmo o seu namorado? <em>👀💕</em></h2><p>Prometo que não vale nota. Só vale sorrir.</p><div class="quiz-doodles" aria-hidden="true">✦ &nbsp; ? &nbsp; ♡</div></div><div class="quiz-panel reveal" id="quiz-panel"><div class="quiz-top"><span id="quiz-progress">PERGUNTA 01 / 05</span><span id="quiz-score">0 acertos ♡</span></div><div class="quiz-track"><span id="quiz-track-fill"></span></div><h3 id="quiz-question"></h3><div class="quiz-options" id="quiz-options"></div><p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p><div class="quiz-actions"><button class="text-button" id="quiz-skip" type="button">Pular esta pergunta →</button><button class="button button-primary" id="quiz-next" type="button" hidden>Próxima pergunta ↗</button><button class="button button-primary" id="quiz-restart" type="button" hidden>Jogar de novo ♡</button></div></div></div>
+    </section>
+
+    <section class="chapter letters section-pad" id="cartinhas" data-chapter="7" aria-labelledby="letters-title">
+      <div class="wrap"><div class="section-heading reveal"><span class="eyebrow">CAPÍTULO 07 · PEQUENOS BILHETES</span><h2 id="letters-title">12 cartinhas, <em>12 meses.</em></h2><p>Cada mês teve seu próprio pedacinho de nós. Abra quantas vezes quiser.</p></div><div class="letter-grid" id="letter-grid"></div><div class="letter-display" id="letter-display" aria-live="polite"><span class="letter-display-mark">♡</span><p>Escolha uma cartinha para ler.</p></div></div>
+    </section>
+
+    <section class="chapter hug section-pad" id="saudade" data-chapter="8" aria-labelledby="hug-title">
+      <div class="wrap hug-layout"><div class="hug-art reveal" aria-hidden="true"><div class="hug-ring"></div><div class="hug-heart left">♥</div><div class="hug-heart right">♥</div><div class="hug-center">♡</div></div><div class="hug-copy reveal"><span class="eyebrow">CAPÍTULO 08 · PARA QUANDO BATER SAUDADE</span><h2 id="hug-title">Tá com saudade <em>de mim? 🥹</em></h2><p>Tem abraço que a gente guarda até poder dar de verdade.</p><div class="hug-buttons"><button class="button button-primary" id="hug-button" type="button">Um abraço, por favor ♡</button><button class="button button-outline" id="kiss-button" type="button">Preciso de um beijinho 💋</button></div><p class="hug-message" id="hug-message" aria-live="polite"></p></div></div>
+    </section>
+
+    <section class="chapter finale section-pad" id="carta" data-chapter="9" aria-labelledby="finale-title">
+      <div class="starfield" aria-hidden="true"></div><div class="wrap finale-inner"><div class="section-heading reveal"><span class="eyebrow light">CAPÍTULO 09 · SÓ MAIS UMA COISA</span><h2 id="finale-title">Antes de terminar...<br><em>tem uma última coisa que eu preciso te dizer.</em></h2></div><button class="envelope envelope-final" id="final-envelope" type="button" aria-expanded="false" aria-controls="final-letter" aria-label="Abrir a carta final"><span class="envelope-shadow"></span><span class="envelope-back"></span><span class="envelope-paper"><span>para você ♡</span></span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-seal">♡</span></button><p class="finale-hint" id="finale-hint">Toque para abrir a carta</p><article class="final-letter" id="final-letter"><div class="letter-paper"><span class="paper-ornament">✦ ♡ ✦</span><div id="final-letter-text"></div><p class="signature" id="final-signature"></p></div><a class="button button-light" href="#surpresa">Ainda tem mais uma coisinha... ↗</a></article></div>
+    </section>
+
+    <section class="chapter surprise section-pad" id="surpresa" data-chapter="10" aria-labelledby="surprise-title">
+      <div class="wrap surprise-inner"><span class="eyebrow">CAPÍTULO 10 · CONTINUA...</span><h2 id="surprise-title">Achou que tinha <em>acabado? 👀</em></h2><p class="surprise-sub" data-copy="surpriseIntro">Nosso primeiro ano chegou ao fim. Mas a nossa história não.</p><button class="gift" id="gift-button" type="button" aria-expanded="false" aria-controls="gift-reveal" aria-label="Abrir o presente"><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow">♡</span></button><div class="gift-reveal" id="gift-reveal" aria-live="polite"><span>VOCÊ ACABOU DE DESBLOQUEAR...</span><strong data-copy="giftMessage">Mais 365 oportunidades de fazer memórias comigo. ♡</strong><p data-copy="nextChapter">Próximo capítulo: nós dois, de novo e de novo.</p></div><div class="promise-grid" id="promise-grid"></div><p class="final-question" data-copy="finalQuestion">Continua comigo nessa história?</p><button class="button button-primary celebration-button" id="celebrate-button" type="button">Claro que sim! ♡</button><p class="celebration-message" id="celebration-message" aria-live="polite"></p><div class="closing-actions"><a class="text-button" href="#convite" id="revisit-link">↻ Reviver desde o começo</a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Criação de Filipe Gualberto ♡</span><a href="#convite">Voltar ao início ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="photo-dialog" id="photo-dialog" aria-label="Visualizador de fotos"><button class="dialog-zoom" id="dialog-zoom" type="button" aria-pressed="false">Ampliar detalhes</button><button class="dialog-close" id="dialog-close" type="button" aria-label="Fechar foto">×</button><button class="dialog-arrow prev" id="dialog-prev" type="button" aria-label="Foto anterior">‹</button><figure><img id="dialog-image" alt=""><figcaption id="dialog-caption"></figcaption></figure><button class="dialog-arrow next" id="dialog-next" type="button" aria-label="Próxima foto">›</button></dialog>
+  <noscript><div class="noscript">Para abrir cartinhas, jogar, ler a carta final e ver as surpresas, ative o JavaScript.</div></noscript>
+</body>
+</html>

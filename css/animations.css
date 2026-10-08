@@ -1,0 +1,13 @@
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-13px) rotate(9deg)}}
+@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+@keyframes planetFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes meetHim{0%,100%{transform:translate(0,0)}48%{transform:translate(18px,-7px)}}
+@keyframes meetHer{0%,100%{transform:translate(0,0)}48%{transform:translate(-18px,-7px)}}
+@keyframes webSpark{0%,100%{transform:scale(1) rotate(0);filter:drop-shadow(0 0 13px #f95369aa)}45%{transform:scale(1.11) rotate(5deg);filter:drop-shadow(0 0 25px #ff9cad)}}
+@keyframes heartbeat{0%,100%{transform:translate(-50%,-50%) scale(1)}45%{transform:translate(-50%,-50%) scale(1.13)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes riseIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes popHeart{0%{opacity:0;transform:translate(0,0) scale(.4)}25%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.1)}}
+.js .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}.js .reveal.visible{opacity:1;transform:none}.heart-pop{position:fixed;z-index:150;left:var(--x);top:var(--y);color:var(--color);font-size:var(--size);pointer-events:none;animation:popHeart .95s ease-out forwards}
+.planet-him{animation:meetHim 7s ease-in-out infinite}.planet-her{animation:meetHer 7s ease-in-out infinite}.web-heart.web-spark{animation:webSpark .8s ease-in-out 2}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}.record-card .disc{animation:none}}
